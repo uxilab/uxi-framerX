@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Switch /> matches snapshot 1`] = `
+<div
+  style={
+    Object {
+      "display": "inline-block",
+    }
+  }
+>
+  <styled.label
+    htmlFor={1}
+  >
+    <styled.div
+      checked={false}
+    >
+      <styled.div
+        checked={false}
+      />
+    </styled.div>
+    <styled.div />
+    <styled.input
+      id={1}
+      name={1}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      style={Object {}}
+      type="checkbox"
+    />
+  </styled.label>
+</div>
+`;

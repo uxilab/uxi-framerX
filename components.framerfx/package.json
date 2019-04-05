@@ -1,0 +1,16 @@
+{
+	"main": "dist/index.js",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/react": "^16.4.16"
+	},
+	"peerDependencies": {
+		"framer": "^0.10",
+		"react": "^16.3.0",
+		"react-dom": "^16.3.0"
+	},
+	"framer": {
+		"id": "d136a788-d4b6-4233-b777-3c04a6a6813c"
+	},
+	"author": "denis Florkin"
+}

@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render an Alert 1`] = `
+<styled.div>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgb(49, 112, 143)",
+        "borderColor": "rgb(49, 112, 143)",
+        "boxSizing": "border-box",
+        "color": "#fff",
+        "display": "flex",
+        "margin": 0,
+        "minHeight": "50px",
+        "padding": 0,
+        "position": "relative",
+      }
+    }
+  >
+    <Alert
+      color="white"
+      style={
+        Object {
+          "margin": "8px 8px 8px 16px",
+          "minWidth": "24px",
+        }
+      }
+    />
+    <div
+      style={
+        Object {
+          "boxSizing": "border-box",
+          "display": "inline-block",
+          "padding": "15px",
+          "width": "100%",
+        }
+      }
+    >
+      This is a message
+    </div>
+  </div>
+</styled.div>
+`;
