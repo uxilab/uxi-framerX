@@ -1,0 +1,11 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "components.framerfx/package.json",
+        "components/example/package.json",
+        "components/package.json"
+      ]
+    }
+  }
+}
