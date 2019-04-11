@@ -14,6 +14,6 @@ export TextField from './Input/TextField'
 
 /** PANEL */
 // export Panel from './Panel/Panel'
-// export PanelHeader from './Panel/PanelHeader'
+export PanelHeader from './Panel/PanelHeader'
 // export PanelContent from './Panel/PanelContent'
 // export PanelFooter from './Panel/PanelFooter'

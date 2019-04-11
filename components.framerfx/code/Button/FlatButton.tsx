@@ -1,6 +1,6 @@
 import * as React from "react";
 import { PropertyControls, ControlType } from "framer";
-import * as compos from "../../../components/dist/index";
+import * as compos from "../../../uxi/dist/index";
 
 // For the best editing experience in VSCode, install Prettier
 // https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode

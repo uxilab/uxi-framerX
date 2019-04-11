@@ -1,6 +1,6 @@
 import * as React from "react";
 import { PropertyControls, ControlType } from "framer";
-import * as compos from "../../../components/dist/index";
+import * as compos from "../../../uxi/dist/index";
 
 // For the best editing experience in VSCode, install Prettier
 // https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
@@ -11,11 +11,13 @@ export class PanelHeader extends React.Component {
   static defaultProps = {
     text: "Click me",
     type: "info"
+    title: "Some title",
   };
 
   static propertyControls = {
     text: { type: ControlType.String, title: "Text" },
     type: { type: ControlType.Enum, title: "Type", options: ['info', "error", 'success', 'warning'] },
+    title: { type: ControlType.String , title: "Title"},
   };
 
   // Return the component contents in JSX

@@ -12,10 +12,9 @@
 
         ],
         "clip" : true,
-        "codeComponentIdentifier" : ".\/Input\/TextField.tsx_TextField",
+        "codeComponentIdentifier" : ".\/Menu\/ButtonMenu.tsx_ButtonMenu",
         "codeComponentProps" : {
-          "placeholder" : "Type something...",
-          "type" : "text"
+
         },
         "codeOverrideEnabled" : false,
         "constraintsLocked" : false,
@@ -38,10 +37,10 @@
         "fillType" : "color",
         "height" : 200,
         "heightType" : 0,
-        "id" : "RwWi1C2oz",
+        "id" : "hKtwgry0N",
         "intrinsicHeight" : null,
         "intrinsicWidth" : null,
-        "left" : 1013,
+        "left" : 598,
         "locked" : false,
         "name" : null,
         "opacity" : 1,
@@ -56,9 +55,9 @@
         "radiusTopRight" : 0,
         "right" : null,
         "rotation" : 0,
-        "top" : 45,
+        "top" : 203,
         "visible" : true,
-        "width" : 645,
+        "width" : 200,
         "widthType" : 0
       }
     ],

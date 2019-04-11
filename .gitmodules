@@ -1,0 +1,3 @@
+[submodule "uxi"]
+	path = uxi
+	url = https://github.com/uxilab/uxi
