@@ -11,12 +11,12 @@ export class ButtonMenu extends React.Component {
   // Set default values for props if there are none
   // https://reactjs.org/docs/react-component.html#defaultprops
   static defaultProps = {
-    children: [
-      <ButtonMenuItem
-        icon={<Connectors />}
-        children="click me"
-      />,
-    ]
+    // children: [
+    //   <ButtonMenuItem
+    //     icon={<Connectors />}
+    //     children="click me"
+    //   />,
+    // ]
   };
 
   static propertyControls = {
@@ -27,7 +27,12 @@ export class ButtonMenu extends React.Component {
   render() {
     return (
       <compos.ThemeProvider>
-        <compos.ButtonMenu {...this.props} />
+        <compos.ButtonMenu {...this.props}>
+          <ButtonMenuItem
+            icon={<Connectors />}
+            children="click me"
+          />
+        </compos.ButtonMenu>
       </compos.ThemeProvider>
     )
   }
