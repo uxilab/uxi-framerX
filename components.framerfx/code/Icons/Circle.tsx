@@ -5,7 +5,7 @@ import * as compos from "../../../uxi/dist";
 // For the best editing experience in VSCode, install Prettier
 // https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 
-export class Compo extends React.Component {
+export class Circle extends React.Component {
   // Set default values for props if there are none
   // https://reactjs.org/docs/react-component.html#defaultprops
   static defaultProps = {
@@ -23,4 +23,4 @@ export class Compo extends React.Component {
   }
 }
 
-export default Compo
+export default Circle
