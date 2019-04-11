@@ -1,11 +1,11 @@
 import * as React from "react";
 import { PropertyControls, ControlType } from "framer";
-import * as compos from "../../components/dist/index";
+import * as compos from "../../../components/dist/index";
 
 // For the best editing experience in VSCode, install Prettier
 // https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 
-export class Compo extends React.Component {
+export class Button extends React.Component {
   // Set default values for props if there are none
   // https://reactjs.org/docs/react-component.html#defaultprops
   static defaultProps = {
@@ -23,10 +23,10 @@ export class Compo extends React.Component {
   render() {
     return (
       <compos.ThemeProvider>
-        <compos.Button {...this.props} />;
+        <compos.Button {...this.props} />
       </compos.ThemeProvider>
     )
   }
 }
 
-export default Compo
+export default Button

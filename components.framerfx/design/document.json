@@ -12,9 +12,10 @@
 
         ],
         "clip" : true,
-        "codeComponentIdentifier" : ".\/Connectors.tsx_Compo",
+        "codeComponentIdentifier" : ".\/Input\/TextField.tsx_TextField",
         "codeComponentProps" : {
-          "color" : "hsl(219, 79%, 11%)"
+          "placeholder" : "Type something...",
+          "type" : "text"
         },
         "codeOverrideEnabled" : false,
         "constraintsLocked" : false,
@@ -37,10 +38,10 @@
         "fillType" : "color",
         "height" : 200,
         "heightType" : 0,
-        "id" : "IgTa1v6Si",
+        "id" : "RwWi1C2oz",
         "intrinsicHeight" : null,
         "intrinsicWidth" : null,
-        "left" : 1273,
+        "left" : 1013,
         "locked" : false,
         "name" : null,
         "opacity" : 1,
@@ -55,68 +56,9 @@
         "radiusTopRight" : 0,
         "right" : null,
         "rotation" : 0,
-        "top" : 72,
+        "top" : 45,
         "visible" : true,
-        "width" : 200,
-        "widthType" : 0
-      },
-      {
-        "__class" : "CodeComponentNode",
-        "aspectRatio" : null,
-        "bottom" : null,
-        "centerAnchorX" : 0,
-        "centerAnchorY" : 0,
-        "children" : [
-
-        ],
-        "clip" : true,
-        "codeComponentIdentifier" : ".\/Button.tsx_Compo",
-        "codeComponentProps" : {
-          "text" : "Yo",
-          "type" : "warning"
-        },
-        "codeOverrideEnabled" : false,
-        "constraintsLocked" : false,
-        "exportOptions" : [
-
-        ],
-        "fillColor" : "rgba(255,255,255,1)",
-        "fillEnabled" : false,
-        "fillGradient" : {
-          "__class" : "LinearGradient",
-          "alpha" : 1,
-          "angle" : 0,
-          "end" : "rgba(0,0,0,0)",
-          "start" : "black"
-        },
-        "fillImage" : null,
-        "fillImagePixelHeight" : null,
-        "fillImagePixelWidth" : null,
-        "fillImageResize" : "fill",
-        "fillType" : "color",
-        "height" : 200,
-        "heightType" : 0,
-        "id" : "rEY6QfmyD",
-        "intrinsicHeight" : null,
-        "intrinsicWidth" : null,
-        "left" : 1236,
-        "locked" : false,
-        "name" : null,
-        "opacity" : 1,
-        "originalid" : null,
-        "parentid" : "vLhv_sNxn",
-        "radius" : 0,
-        "radiusBottomLeft" : 0,
-        "radiusBottomRight" : 0,
-        "radiusIsRelative" : false,
-        "radiusPerCorner" : false,
-        "radiusTopLeft" : 0,
-        "radiusTopRight" : 0,
-        "right" : null,
-        "rotation" : 0,
-        "top" : 137,
-        "visible" : true,
-        "width" : 200,
+        "width" : 645,
         "widthType" : 0
       }
     ],

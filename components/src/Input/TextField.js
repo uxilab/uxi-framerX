@@ -1,27 +1,27 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 // import { palette } from '../Theme/palette';
-import styled from 'styled-components';
+import styled from 'styled-components'
 import {
 // Done as SuccessIcon,
 // Issue as ErrorIcon,
-} from '../Icons';
+} from '../Icons'
 // import default theme in case not themeprovider is used
-import { theme as defaultTheme } from '../Theme';
-import StatusIcon from './utils/StatusIcon';
-import ErrorWrapperUI from './utils/ErrorWrapperUI';
+import { theme as defaultTheme } from '../Theme'
+import StatusIcon from './utils/StatusIcon'
+import ErrorWrapperUI from './utils/ErrorWrapperUI'
 
 // const { semantic } = palette;
 
 const InputWrapperUI = styled.div.attrs({
-  theme: ({ theme }) => (theme || defaultTheme),
+  theme: ({ theme }) => (theme || defaultTheme)
 })`
   position: relative;
   ${({ isFullWidth }) => (isFullWidth ? 'width: 100%' : '')};
-`;
+`
 
 const InputUI = styled.input.attrs({
-  theme: ({ theme }) => (theme || defaultTheme),
+  theme: ({ theme }) => (theme || defaultTheme)
 })`
   border-radius: 3px;
   border-radius: ${({ theme: { radius } }) => radius};
@@ -45,7 +45,7 @@ const InputUI = styled.input.attrs({
     box-shadow: ${({ theme: { outlineShadow } }) => outlineShadow};
     outline: ${({ theme: { outlineShadow } }) => outlineShadow};
   }
-`;
+`
 
 // const ErrorWrapperUI = styled.span.attrs({
 //   theme: ({ theme }) => (theme || defaultTheme),
@@ -76,28 +76,28 @@ const InputUI = styled.input.attrs({
 class TextField extends Component {
   // TODO handle generating uid that doesn't force rerebder
   constructor(props) {
-    super(props);
-    this.handleChange = this.handleChange.bind(this);
+    super(props)
+    this.handleChange = this.handleChange.bind(this)
   }
 
   componentWillMount() {
-    this.isControlled = this.props.value !== undefined;
+    this.isControlled = this.props.value !== undefined
     if (!this.isControlled) {
       // not controlled, use internal state
       this.setState({
-        value: this.props.defaultValue !== undefined ? this.props.defaultValue : '',
-      });
+        value: this.props.defaultValue !== undefined ? this.props.defaultValue : ''
+      })
     }
   }
 
   handleChange(event) {
-    const { value } = event.target;
+    const { value } = event.target
     if (!this.isControlled) {
-      this.setState({ value });
+      this.setState({ value })
     }
 
-    const { onChange } = this.props;
-    if (onChange) { onChange(event, value); }
+    const { onChange } = this.props
+    if (onChange) { onChange(event, value) }
   }
 
   render() {
@@ -112,7 +112,7 @@ class TextField extends Component {
       tabIndex = 0,
       isFullWidth,
       ...attributes
-    } = this.props;
+    } = this.props
 
     // const stateIcon = error // eslint-disable-line no-nested-ternary
     //   ? <ErrorIcon size="16" />
@@ -122,8 +122,8 @@ class TextField extends Component {
     const inputAttributes = {
       ...attributes,
       ...(tabIndex !== undefined ? { tabIndex } : {}),
-      value: this.isControlled ? this.props.value : this.state.value,
-    };
+      value: this.isControlled ? this.props.value : this.state.value
+    }
 
     return (
       <InputWrapperUI isFullWidth={isFullWidth}>
@@ -144,29 +144,28 @@ class TextField extends Component {
           {error}
         </ErrorWrapperUI>
       </InputWrapperUI>
-    );
+    )
   }
 }
 
-
 TextField.propTypes = {
   type: PropTypes.oneOf([
-    'text', 'email', 'password', 'search', 'file', 'number',
+    'text', 'email', 'password', 'search', 'file', 'number'
   ]),
   /**
    * onChange: callback function
    * will be passed a first arg 'event' (ReactEvent)
    * as well as a énd arg 'value' (String)
    */
-  onChange: PropTypes.func,
-};
+  onChange: PropTypes.func
+}
 
 TextField.defaultProps = {
   type: 'text',
 
-  onChange: (event, value) => {}, // eslint-disable-line no-unused-vars
-};
+  onChange: (event, value) => {} // eslint-disable-line no-unused-vars
+}
 
-TextField.displayName = 'TextField';
+TextField.displayName = 'TextField'
 
-export default TextField;
+export default TextField

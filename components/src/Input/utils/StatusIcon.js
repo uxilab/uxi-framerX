@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 import {
   Done as SuccessIcon,
-  Issue as ErrorIcon,
-} from '../../Icons';
+  Issue as ErrorIcon
+} from '../../Icons'
 
 /* eslint-disable no-nested-ternary */
 const StatusIconUI = styled.span`
@@ -24,22 +24,22 @@ const StatusIconUI = styled.span`
     fill: currentColor !important;
     color: currentColor !important;
   }
-`;
+`
 
 const StatusIcon = ({ error, success, style }) => {
   const stateIcon = error // eslint-disable-line no-nested-ternary
-    ? <ErrorIcon size="16" />
-    : (success ? <SuccessIcon size="16" /> : null
-    );
+    ? <ErrorIcon size='16' />
+    : (success ? <SuccessIcon size='16' /> : null
+    )
 
   return (
     <StatusIconUI error={error} success={success} style={style}>
       {stateIcon}
     </StatusIconUI>
-  );
+  )
 };
 
-StatusIcon.displayName = 'StatusIcon';
+StatusIcon.displayName = 'StatusIcon'
 
 
-export default StatusIcon;
+export default StatusIcon
