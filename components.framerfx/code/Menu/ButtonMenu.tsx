@@ -17,9 +17,15 @@ export class ButtonMenu extends React.Component {
     //     children="click me"
     //   />,
     // ]
+    anchor: 'left',
   };
 
   static propertyControls = {
+    anchor: {
+      title: "Anchor",
+      type: ControlType.Enum,
+      options: ['left', "right"],
+    },
   };
 
   // Return the component contents in JSX
